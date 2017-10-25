@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.csolarpanelapp.csolarpanelapp.ManufacterData">
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Corriente nominal en corto circuito [A]"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_below="@+id/name"
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tensión nominal de circuito abierto [V]"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_below="@+id/name1"
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Corriente del punto de máxima potencia [A]"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_below="@+id/name2"
+                android:id="@+id/name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tensión del punto de máxima potencia [V]"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_below="@+id/nam3"
+                android:id="@+id/name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Coeficiente de temperatura/Tensión [V/K]"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_below="@+id/nam4"
+                android:id="@+id/name5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Coeficiente de temperatura/Corriente [A/K]"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_below="@+id/name5"
+                android:id="@+id/name6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nº de células en serie"
+                android:inputType="numberDecimal"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Send Data"
+                android:layout_below="@+id/name7"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableRight="@mipmap/airplane"
+                android:onClick="sendData"
+                />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
